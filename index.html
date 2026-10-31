@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <title>OFEK — Satellite Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="Ofek archive home">OFEK<span> / ARCHIVE</span></a>
+    <div class="top-controls">
+      <span class="edition" data-i18n="edition">ISRAEL · SPACE PROGRAM</span>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עב</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">FIELD NOTES · 01</p>
+        <h1 id="hero-title">Ofek<span class="title-dot">.</span></h1>
+        <p class="hero-subtitle" data-i18n="subtitle">Israel’s satellite program</p>
+      </div>
+      <div class="hero-art" aria-label="Abstract satellite illustration" role="img">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="planet"></div>
+        <div class="satellite">
+          <div class="solar solar-left"></div>
+          <div class="sat-body"><i></i></div>
+          <div class="solar solar-right"></div>
+          <div class="antenna"></div>
+        </div>
+        <span class="art-label">19.09.1988<br>31°N / 35°E</span>
+      </div>
+      <div class="hero-meta">
+        <span data-i18n="heroMeta">A short introduction to the Ofek satellite series</span>
+        <span class="scroll-mark" aria-hidden="true">↓</span>
+      </div>
+    </section>
+
+    <section class="article-section" id="article">
+      <div class="section-index"><span>01</span><span data-i18n="articleLabel">THE STORY</span></div>
+      <article class="article">
+        <p class="article-kicker" data-i18n="articleKicker">ORBITAL HISTORY</p>
+        <h2 data-i18n="articleTitle">A horizon of its own</h2>
+        <p data-i18n="p1">Ofek (אופק, “horizon”) is a series of Israeli satellites developed for Earth observation. The program is led by Israel’s Ministry of Defense, with Israel Aerospace Industries as a key developer.</p>
+        <p data-i18n="p2">The first satellite, Ofek 1, launched on 19 September 1988 aboard the Shavit launch vehicle from Israel. It was a technology demonstrator, designed to test systems such as power generation, communications, and satellite operation in orbit.</p>
+        <p data-i18n="p3">The early missions built the foundation for more advanced observation satellites. Ofek 3, launched in 1995, marked a major step in the series’ imaging capabilities. Later generations continued to improve the technology used to collect and transmit images of Earth.</p>
+        <p data-i18n="p4">Most Ofek satellites operate in low Earth orbit. Their development reflects Israel’s effort to build and maintain independent space capabilities, from spacecraft design to launch and ground control.</p>
+        <div class="article-facts">
+          <div><span data-i18n="fact1Label">FIRST LAUNCH</span><strong>1988</strong></div>
+          <div><span data-i18n="fact2Label">LAUNCH VEHICLE</span><strong>Shavit</strong></div>
+          <div><span data-i18n="fact3Label">ORBIT</span><strong data-i18n="fact3Value">Low Earth</strong></div>
+        </div>
+        <p class="source-note" data-i18n="source">Sources: Israel Ministry of Defense; Israel Space Agency.</p>
+        <button class="primary-btn" id="readButton" type="button">
+          <span data-i18n="readButton">I’ve read the article</span><span aria-hidden="true">↗</span>
+        </button>
+      </article>
+    </section>
+
+    <section class="quiz-section hidden" id="quiz" aria-labelledby="quiz-title">
+      <div class="section-index"><span>02</span><span data-i18n="quizLabel">KNOWLEDGE CHECK</span></div>
+      <div class="quiz-wrap">
+        <div class="quiz-heading">
+          <p class="article-kicker" data-i18n="quizKicker">QUICK REVIEW</p>
+          <h2 id="quiz-title" data-i18n="quizTitle">What stayed with you?</h2>
+          <p data-i18n="quizIntro">Choose one answer for each question.</p>
+        </div>
+        <div class="progress-line"><span id="progressFill"></span></div>
+        <div class="quiz-content" id="quizContent"></div>
+        <div class="quiz-actions">
+          <span id="questionCount">01 / 05</span>
+          <button class="primary-btn" id="nextButton" type="button" disabled>
+            <span data-i18n="nextButton">Next question</span><span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section hidden" id="result" aria-live="polite">
+      <div class="section-index"><span>03</span><span data-i18n="resultLabel">RESULT</span></div>
+      <div class="result-card">
+        <p class="article-kicker" data-i18n="resultKicker">QUIZ COMPLETE</p>
+        <h2 data-i18n="resultTitle">Your result</h2>
+        <div class="score"><span id="scoreValue">0</span><small>/ 100</small></div>
+        <p class="result-message" id="resultMessage"></p>
+        <button class="secondary-btn" id="restartButton" type="button"><span data-i18n="restartButton">Read again</span><span aria-hidden="true">↺</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>OFEK / ARCHIVE</span>
+    <span data-i18n="footer">An educational project · Israel</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
